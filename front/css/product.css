@@ -1,0 +1,467 @@
+/* 预定义样式 */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    vertical-align: top;
+    border: none;
+  }
+  /* 正式样式 */
+  /* 顶部    header   css样式 */
+  .header {
+    width: 100%;
+    height: 100px;
+  }
+  .header .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1230px;
+    margin: 0 auto;
+    height: 100px;
+  }
+  /* logo样式 */
+  .header .logo img {
+    width: 173px;
+    height: 53px;
+  }
+  .header .center {
+    display: flex;
+  }
+  /* 搜索框样式 */
+  .header .center .search {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  .header .center .search input {
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 800;
+    caret-color: orangered;
+    outline: none;
+  }
+  input::-webkit-input-placeholder {
+    color: rgb(255, 141, 100);
+  }
+  .header .center .search a {
+    font-size: 28px;
+    line-height: 100px;
+  }
+  .header .center .search span:first-child {
+    display: block;
+    height: 26px;
+    width: 2px;
+    background-color: orangered;
+  }
+  /* 商城、购物车样式 */
+  .header .center .my {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header .center .my div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+  }
+  .header .center .my div :last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #aaaaaa;
+  }
+  .header .center .my div :first-child {
+    font-size: 28px;
+    margin-right: 5px;
+    color: orangered;
+    cursor: pointer;
+  }
+  
+  .header .center .my div :last-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #626262;
+  }
+  /* 登录样式 */
+  .header .header-container .right {
+    display: flex;
+  }
+  .header .header-container .right .login {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid orangered;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .header .header-container .right .login a {
+    display: block;
+    border-radius: 16px;
+    height: 32px;
+    color: orangered;
+  }
+  .header .header-container .right .login:hover {
+    background-color: orangered;
+  }
+  .header .header-container .right .login a:hover {
+    background-color: orangered;
+    color: white;
+  }
+  /* 顶部css样式 end */
+
+  /* 导航css样式 */
+.nav {
+    width: 100%;
+    border-bottom: 2px solid orangered;
+}
+.nav .content {
+    width: 1230px;
+    margin: 0 auto;
+}
+.nav .content .outside {
+    display: flex;
+    height: 40px;
+}
+.nav .content .outside li:first-child{
+    margin-left:280px; 
+}
+.nav .content .outside li a{
+    line-height: 40px;
+    margin-right: 60px;
+    font-size: 18px;
+    color:#393939;
+}
+.nav .content ul li a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid orangered;
+}
+
+/*middle*/
+.middle {
+    display: flex;
+}
+.product {
+    width: 210px;
+    height: 500px;
+    border-right: 1px solid orangered;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.list li {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    cursor: pointer;
+    margin: 20px;
+    align-items: center;
+    color: #2c2c2c;
+}
+
+.list li ul {
+    margin: 0;
+    padding: 0;
+}
+
+.list li ul li {
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+.list li ul li:hover{
+    color: orangered;
+}
+.product .list li label {
+    width: 5px;
+    height: 22px;
+    background-color: #ff3600;
+    border-radius: 3.5px;
+    float: left;
+    margin-top: 2px; 
+    margin-right: 10px; 
+}
+
+/* 列表 */
+
+.middle-list {
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.middle-list .hot-game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+.middle-list .hot-game .show-game img{
+    width: 286px;
+    height: 135px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.middle-list .hot-game .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.middle-list .hot-game .bottom .money {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    background-color: #161b22;
+}
+.middle-list .hot-game .bottom .money .discount {
+    width: 72px;
+    height: 34px;
+    background-color: #52872f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.middle-list .hot-game .bottom .money .money-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58px;
+    height: 34px;
+    color: #7c7c7c;
+    text-align: center;
+    font-size: 12px;
+}
+.middle-list .hot-game .bottom .money .money-two span:first-child {
+    text-decoration: line-through;
+}
+.middle-list .hot-game .bottom .money .money-two span:last-child {
+    color: #b1d2e7;
+}
+.middle-list .hot-game .bottom .logo-out {
+    position: relative;
+    width: 156px;
+    background-color: #161b22;
+    border-bottom-right-radius: 5px;
+}
+.middle-list .hot-game .bottom .logo-out img {
+    width: 100px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+/*隐藏*/
+.middle-list .hot-game .hidden {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #161b22;
+    display: none;
+    border-radius: 5px;
+}
+.middle-list .hot-game .hidden .top {
+    width: 286px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.middle-list .hot-game .hidden .top .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.middle-list .hot-game .hidden .top .name span:first-child {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center
+}
+.middle-list .hot-game .hidden .top .name span:last-child {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff; 
+    margin-top: 5px;
+}
+.middle-list .hot-game .hidden .top .look {
+    width: 286px;
+    display: flex;
+    justify-content: space-around;
+}
+.middle-list .hot-game .hidden .top .look span {
+    display: block;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border:1px solid orangered;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: orangered;
+}
+.middle-list .hot-game .hidden .top .look span:hover {
+    background-color: orangered;
+    
+}
+.middle-list .hot-game .hidden .top .look span:hover {
+    background-color: orangered;
+    color: white;
+}
+.middle-list .hot-game .hidden .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.middle-list .hot-game .hidden .bottom .money {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    background-color: #161b22;
+}
+.middle-list .hot-game .hidden .bottom .money .discount {
+    width: 72px;
+    height: 34px;
+    background-color: #52872f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.middle-list .hot-game .hidden .bottom .money .money-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58px;
+    height: 34px;
+    color: #7c7c7c;
+    text-align: center;
+    font-size: 12px;
+}
+.middle-list .hot-game .hidden .bottom .money .money-two span:first-child {
+    text-decoration: line-through;
+}
+.middle-list .hot-game .hidden .bottom .money .money-two span:last-child {
+    color: #b1d2e7;
+}
+.middle-list .hot-game .hidden .bottom .logo {
+    position: relative;
+    width: 156px;
+    background-color: #161b22;
+    border-bottom-right-radius: 5px;
+}
+.middle-list .hot-game .hidden .bottom .logo img {
+    width: 70px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+.middle-list .hot-game:hover .hidden{
+    display: block;
+    box-shadow: 0 0 15px rgba(170, 170, 170, 1);
+}
+
+
+/* finish */
+.finish {
+    width: 100%;
+    height: 585px;
+    background-color: #333c47;
+    margin-top: 50px;
+}
+.finish .finish-content {
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.finish .finish-content .about {
+    display: flex;
+    justify-content: space-between;
+}
+.finish .finish-content .about>ul {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    color: #9eafc3;
+}
+.finish .finish-content .about>ul>li:first-child {    
+    font-size: 20px;
+    font-weight: bold;
+    color: #9eafc3; 
+}
+.finish .finish-content .about>ul>li {    
+    font-size: 14px;
+    color: #9eafc3; 
+    text-align: left;
+    margin: 8px 0;
+    cursor: pointer;
+}
+.finish .finish-content .online {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.finish .finish-content .online>ul>li:first-child {    
+    font-size: 20px;
+    font-weight: bold;
+    color: #9eafc3; 
+}
+.finish .finish-content .online>ul>li {    
+    font-size: 14px;
+    color: #9eafc3; 
+    text-align: left;
+    margin: 8px 0;
+    /* cursor: pointer; */
+}
+.finish .finish-content .end {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+.finish .finish-content .end span {
+    font-size: 14px;
+    color: #9eafc3; 
+}
+.finish .finish-content ul li a:hover {
+    color: #ff3600;
+}
+.finish .finish-content ul li a{
+    color: #9eafc3; 
+    cursor: pointer;
+}

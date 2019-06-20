@@ -1,0 +1,1197 @@
+/* 预定义样式 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+  border: none;
+}
+/* 正式样式 */
+/* 顶部    header   css样式 */
+.header {
+    width: 100%;
+    height: 100px;
+}
+.header .header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1230px;
+    margin: 0 auto;
+}
+/* logo样式 */
+.header .logo img{
+    width: 173px;
+    height: 53px;
+}
+.header .center {
+    display: flex;
+}
+/* 搜索框样式 */
+.header .center .search {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+.header .center .search input {
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 800;
+    caret-color:orangered;
+    outline: none;
+}
+input::-webkit-input-placeholder{
+    color:rgb(255, 141, 100);
+}
+.header .center .search a {
+    font-size: 28px;
+    line-height: 100px;
+}
+.header .center .search span:first-child {
+    display: block;
+    height: 26px;
+    width: 2px;
+    background-color: orangered;
+}
+/* 商城、购物车样式 */
+.header .center .my {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header .center .my div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+}
+.header .center .my div :last-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: #aaaaaa;
+}
+.header .center .my div :first-child {
+    font-size: 28px;
+    margin-right: 5px;
+    color: orangered;
+    cursor: pointer;
+}
+
+.header .center .my div :last-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #626262;
+}
+/* 登录样式 */
+.header .header-container .right {
+    display: flex;
+}
+.header .header-container .right .login {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    border:1px solid orangered;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.header .header-container .right .login a {
+    display: block;
+    border-radius: 16px;
+    height: 32px;
+    color: orangered;
+}
+.header .header-container .right .login:hover {
+    background-color: orangered;
+    
+}
+.header .header-container .right .login a:hover {
+    background-color: orangered;
+    color: white;
+}
+/* 顶部css样式 end */
+
+/* 导航css样式 */
+.nav {
+    width: 100%;
+    border-bottom: 2px solid orangered;
+}
+.nav .content {
+    width: 1230px;
+    margin: 0 auto;
+}
+.nav .content .outside {
+    height: 40px;
+}
+.nav .content .outside li{
+    float: left;
+    position: relative;
+}
+.nav .content .outside li a{
+    line-height: 40px;
+    margin-right: 60px;
+    font-size: 18px;
+    color:#393939;
+}
+.nav .content ul li a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid orangered;
+}
+/* 二级导航 */
+.nav .content ul .second .core{
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    width: 485px;
+    height: 260px;
+    display: none;
+    border:1px solid orangered;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.nav .content ul .second .core .top {
+    display: block;
+    height: 50px;
+}
+.nav .content ul .second .core .top>:first-child {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+}
+.nav .content ul .second .core .top>:last-child {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-weight: bold;
+}
+.nav .content ul .second .core .two {
+    display: flex;
+    justify-content: space-around;
+}
+.nav .content ul .second .core .two>:last-child {
+    border-left: 2px solid #dbdbdb;
+}
+.nav .content ul>.second>.core>.two>ul {
+    width: 160px;
+}
+.nav .content ul>.second>.core>.two>ul>li {
+    display: flex;
+    flex-direction: row;
+}
+.nav .content ul>.second>.core>.two>ul>li>a {
+    font-size: 14px;
+   margin-left: 10px;
+}
+.nav .content ul .second .core .two>ul>li>a:hover {
+    color: orangered;
+    font-weight: normal;
+    border: none;
+}
+.nav .content .outside .second:hover .core{
+    display: block;
+}
+/* 轮播图css */
+#rollImg {
+    width: 1366px;
+    height: 768px;
+    margin: 100 auto;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+    margin: auto;
+    z-index: 9;
+}
+#imgCon {
+    width: 9562px;
+    height: 768px;
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    transition: all 0s;
+}
+#imgCon img {
+    width: 1366px;
+    height: 768px;
+}
+#leftBn,#rightBn {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 334px;
+    opacity: 0.3;
+}
+#leftBn:hover,#rightBn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+#leftBn{
+    position: absolute;
+    left: 10px;
+}
+#rightBn{
+    position: absolute;
+    right: 10px;
+}
+#rollImg>ul {
+    position: absolute;
+    left: 630px;
+    bottom: 10px;
+    list-style: none;
+}
+#rollImg>ul li{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(169, 220, 240);
+    border-radius: 5px;
+    margin-right: 5px;
+    float: left;
+    background-color: rgba(255, 0, 0, 0);
+}
+#rollImg>ul li:hover {
+    cursor: pointer;
+}
+
+/* PC游戏css */
+.pc {
+    width: 100%;
+    background-color: #f9f9f8;
+}
+.pc .content {
+    /* width: 1230px; */
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.pc .content .top {
+    display: flex;
+    justify-content: space-between;
+}
+.pc .content .top .left {
+    display: flex;
+    align-items: center;
+}
+.pc .content .top .left label {
+    width: 7px;
+    height: 22px;
+    background-color: #ff3600;
+    border-radius: 3.5px;
+    float: left;
+}
+.pc .content .top .left span {
+    width: 80px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e3e3e;
+}
+.pc .content .top .right {
+    display: flex;
+    justify-content: space-between;
+    /* width: 1093px; */
+    width: 80%;
+}
+.pc .content .top .right .new {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+}
+.pc .content .top .right .new span{
+    line-height: 100px;
+    font-size: 18px;
+    color: #595959;
+    cursor: pointer;
+}
+/* 鼠标点击？？？？？ */
+.pc .content .top .right .new span:active ,span:visited {
+    font-weight: bold;
+}
+.pc .content .top .right .more {
+    margin-top: 34px;
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    line-height: 32px;
+    text-align: center;
+}
+.pc .content .top .right .more a {
+    color: #595959;
+}
+.pc .content .down {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.pc .content .down .down-content {
+    display: flex;
+    flex-direction: column;
+}
+.pc .content .down .down-content .pic {
+    position: relative;
+    width: 160px;
+    height: 212px;
+}
+/* 阴影 */
+.pc .content .down .down-content .pic .shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 158px;
+    height: 210px;
+    box-shadow: 0px 0px 20px #ff3600;
+    border: 1px solid #ff3600;
+    opacity: 0.7;
+    display: none;
+    z-index: 10;
+}
+.pc .content .down .down-content .pic .go {
+    position: absolute;
+    left: 30px;
+    top: 91px;
+    display: block;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: #ff3600;
+    color: snow;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+    display: none;
+    
+}
+.pc .content .down .down-content .pic:hover .shadow {
+    display: block;
+}
+.pc .content .down .down-content .pic:hover .go {
+    display: block;
+}
+.pc .content .down .down-content .pic a img {
+    width: 160px;
+    height: 212px;
+}
+.pc .content .down .down-content .pic a .money {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.pc .content .down .down-content .pic a .price {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 72px;
+    height: 34px;
+    background-color: #52872f;
+    color: #a0f76c;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.pc .content .down .down-content .pic a .money-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 72px;
+    width: 58px;
+    height: 34px;
+    background-color: #203d50;
+    color: #7c7c7c;
+    text-align: center;
+    font-size: 12px;
+}
+.pc .content .down .down-content .pic a .money-one span:first-child {
+    text-decoration: line-through;
+}
+.pc .content .down .down-content .pic a .money-one span:last-child {
+    color: #b1d2e7;
+}
+.pc .content .down .down-content .date {
+    display: flex;
+    align-items: center;
+}
+.pc .content .down .down-content .date label {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    border: 4px solid #cccccc;
+    margin: 25px 10px 25px 20px;
+}
+.pc .content .down .down-content .date span {
+    color: #6a6a6a;
+}
+.pc .content .down .down-content .end {
+    display: flex;
+    flex-direction: column;
+}
+.pc .content .down .down-content .end a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4b4b4b;
+    text-align: center
+}
+.pc .content .down .down-content .end a:hover {
+    color: #ff3600;
+}
+.pc .content .down .down-content .end span {
+    text-align: center;
+    font-size: 14px;
+    color: #999999; 
+    margin-top: 5px;
+} 
+
+/* 热门精选css */
+.hot {
+    width: 100%;
+    background-color:#f9f9f8;
+}
+.hot .hot-content {
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.hot .hot-content .top {
+    display: flex;
+    justify-content: space-between;
+}
+.hot .hot-content .top .left {
+    display: flex;
+    align-items: center;
+}
+.hot .hot-content .top .left label {
+    width: 7px;
+    height: 22px;
+    background-color: #ff3600;
+    border-radius: 3.5px;
+    float: left;
+}
+.hot .hot-content .top .left span {
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e3e3e;
+}
+.hot .hot-content .top .right {
+    margin-top: 34px;
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    line-height: 32px;
+    text-align: center;
+}
+
+.hot .hot-content .top .right a {
+    color: #595959;
+}
+.hot .hot-content .half-top {
+    display: flex;
+    
+}
+.hot .hot-content .half-top .show {
+    width: 615px;
+    border-radius: 5px;
+}
+.hot .hot-content .half-top .show img {
+    width: 560px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hot .hot-content .half-top .right {
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+.hot .hot-content .half-top .right .hot-game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.hot .hot-content .half-top .right .hot-game .show-game img{
+    width: 286px;
+    height: 135px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.hot .hot-content .half-top .right .hot-game .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.hot .hot-content .half-top .right .hot-game .bottom .money {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    background-color: #ffffff;
+}
+.hot .hot-content .half-top .right .hot-game .bottom .money .discount {
+    width: 72px;
+    height: 34px;
+    background-color: #52872f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.hot .hot-content .half-top .right .hot-game .bottom .money .money-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58px;
+    height: 34px;
+    color: #7c7c7c;
+    text-align: center;
+    font-size: 12px;
+}
+.hot .hot-content .half-top .right .hot-game .bottom .money .money-two span:first-child {
+    text-decoration: line-through;
+}
+.hot .hot-content .half-top .right .hot-game .bottom .money .money-two span:last-child {
+    color: #ff3600
+}
+.hot .hot-content .half-top .right .hot-game .bottom .logo {
+    position: relative;
+    width: 156px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+}
+.hot .hot-content .half-top .right .hot-game .bottom .logo img {
+    width: 70px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+/*隐藏*/
+.hot .hot-content .half-top .right .hot-game .hidden {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    display: none;
+    border-radius: 5px;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .top {
+    width: 286px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .top .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .top .name span:first-child {
+    font-size: 18px;
+    color: #4b4b4b;
+    text-align: center
+}
+.hot .hot-content .half-top .right .hot-game .hidden .top .name span:last-child {
+    text-align: center;
+    font-size: 14px;
+    color: #999999; 
+    margin-top: 5px;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .top .look {
+    width: 286px;
+    display: flex;
+    justify-content: space-around;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .top .look span {
+    display: block;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border:1px solid orangered;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: orangered;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .top .look span:hover {
+    background-color: orangered;
+    
+}
+.hot .hot-content .half-top .right .hot-game .hidden .top .look span:hover {
+    background-color: orangered;
+    color: white;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .bottom .money {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    background-color: #ffffff;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .bottom .money .discount {
+    width: 72px;
+    height: 34px;
+    background-color: #52872f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .bottom .money .money-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58px;
+    height: 34px;
+    color: #7c7c7c;
+    text-align: center;
+    font-size: 12px;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .bottom .money .money-two span:first-child {
+    text-decoration: line-through;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .bottom .money .money-two span:last-child {
+    color: #ff3600
+}
+.hot .hot-content .half-top .right .hot-game .hidden .bottom .logo {
+    position: relative;
+    width: 156px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+}
+.hot .hot-content .half-top .right .hot-game .hidden .bottom .logo img {
+    width: 70px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.hot .hot-content .half-top .right .hot-game:hover .hidden{
+    display: block;
+    box-shadow: 0 0 15px rgba(170, 170, 170, 1);
+}
+/*隐藏 end*/
+.hot .hot-content .helf-bottom {
+    margin-top: 50px;
+    width: 1230px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.hot .hot-content .helf-bottom .pic {
+    position: relative;
+    width: 210px;
+    border-radius: 5px;
+}
+.hot .hot-content .helf-bottom .pic img {
+    width: 210px;
+    height: 100px;
+    border-radius: 5px;
+}
+.hot .hot-content .helf-bottom .pic .game {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: none;
+}
+.hot .hot-content .helf-bottom .pic .game .name {
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+}
+.hot .hot-content .helf-bottom .pic .game .name span:first-child{
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    color: #ff3600;
+    text-align: center; 
+    line-height: 50px;
+}
+.hot .hot-content .helf-bottom .pic .game .name span:last-child{
+    display: block;
+    height: 30px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+.hot .hot-content .helf-bottom .pic .game .money-three {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.hot .hot-content .helf-bottom .pic .game .money-three span:nth-child(1) {
+    display: block;
+    width: 30px;
+    height: 20px;
+    background-color: #52872f;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 20px;
+}
+.hot .hot-content .helf-bottom .pic .game .money-three span:nth-child(2) {
+    display: block;
+    width: 30px;
+    height: 25px;
+    color: #ff3600;
+    font-size: 14px;
+    line-height: 25px;
+}
+.hot .hot-content .helf-bottom .pic .game .money-three img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+}
+.hot .hot-content .helf-bottom .pic:hover .game {
+    display: block;
+    box-shadow: 0 0 15px rgba(170, 170, 170, 1);
+}
+
+
+/*折扣促销*/
+.promotion {
+    width: 100%;
+    background-color:#f9f9f8;
+}
+.promotion .promotion-content {
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion .promotion-content .top {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.promotion .promotion-content .top .left {
+    display: flex;
+    align-items: center;
+}
+.promotion .promotion-content .top .left label {
+    width: 7px;
+    height: 22px;
+    background-color: #ff3600;
+    border-radius: 3.5px;
+    float: left;
+}
+.promotion .promotion-content .top .left span {
+    width: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e3e3e;
+}
+.promotion .promotion-content .top .right {
+    margin-top: 34px;
+    width: 80px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    line-height: 32px;
+    text-align: center;
+}
+
+.promotion .promotion-content .top .right a {
+    color: #595959;
+}
+
+.promotion .promotion-content .half-top {
+    display: flex
+}
+.promotion .promotion-content .half-top>.left {
+    width: 560px;
+    height: 410px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.promotion .promotion-content .half-top>.left .time {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 410px;
+    background: url(../../img/e01.jpg) no-repeat;
+    border-radius: 15px;
+    text-align: center;
+}
+.promotion .promotion-content .half-top>.left div:last-child {
+    background: url(../../img/e001.jpg) no-repeat;
+}
+
+.promotion .promotion-content .half-top>.left .time .name {
+    display: flex;
+    flex-direction: column;
+}
+.promotion .promotion-content .half-top>.left .time .name span:first-child{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 60px;
+}
+.promotion .promotion-content .half-top>.left .time .name span:last-child{
+    font-size: 14px;
+    color: #acadb8;
+    margin-top: 5px;
+}
+.promotion .promotion-content .half-top>.left .time div:nth-child(2){
+    font-size: 60px;
+    color: #84ea3f;
+    margin-top: 100px;
+    font-weight: bold;
+}
+.promotion .promotion-content .half-top>.left .time a{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #ff3600;
+    line-height: 30px;
+    cursor: pointer;
+    margin: 0 78px;
+}
+.promotion .promotion-content .half-top>.left .time a {
+    color: #ff3600;
+}
+/*倒计时*/
+#connt-down ,#connt-down-1 {
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+
+
+/*折扣促销right*/
+/* .promotion .promotion-content */
+.promotion .promotion-content .half-top .right {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+}
+.promotion .promotion-content .half-top .right .hot-game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.promotion .promotion-content .half-top .right .hot-game .show-game img{
+    width: 286px;
+    height: 135px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+.promotion .promotion-content .half-top .right .hot-game .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.promotion .promotion-content .half-top .right .hot-game .bottom .money {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    background-color: #ffffff;
+}
+.promotion .promotion-content .half-top .right .hot-game .bottom .money .discount {
+    width: 72px;
+    height: 34px;
+    background-color: #52872f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.promotion .promotion-content .half-top .right .hot-game .bottom .money .money-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58px;
+    height: 34px;
+    color: #7c7c7c;
+    text-align: center;
+    font-size: 12px;
+}
+.promotion .promotion-content .half-top .right .hot-game .bottom .money .money-two span:first-child {
+    text-decoration: line-through;
+}
+.promotion .promotion-content .half-top .right .hot-game .bottom .money .money-two span:last-child {
+    color: #ff3600
+}
+.promotion .promotion-content .half-top .right .hot-game .bottom .logo {
+    position: relative;
+    width: 156px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+}
+.promotion .promotion-content .half-top .right .hot-game .bottom .logo img {
+    width: 70px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+/*隐藏div*/
+.promotion .promotion-content .half-top .right .hot-game .hidden {
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    display: none;
+    border-radius: 5px;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .top {
+    width: 286px;
+    /* height: 135px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .top .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .top .name span:first-child {
+    font-size: 18px;
+    color: #4b4b4b;
+    text-align: center
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .top .name span:last-child {
+    text-align: center;
+    font-size: 14px;
+    color: #999999; 
+    margin-top: 10px;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .top .look {
+    width: 286px;
+    display: flex;
+    justify-content: space-around;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .top .look span {
+    display: block;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border:1px solid orangered;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: orangered;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .top .look span:hover {
+    background-color: orangered;
+    
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .top .look span:hover {
+    background-color: orangered;
+    color: white;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .bottom .money {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    background-color: #ffffff;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .bottom .money .discount {
+    width: 72px;
+    height: 34px;
+    background-color: #52872f;
+    color: #ffffff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .bottom .money .money-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 58px;
+    height: 34px;
+    color: #7c7c7c;
+    text-align: center;
+    font-size: 12px;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .bottom .money .money-two span:first-child {
+    text-decoration: line-through;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .bottom .money .money-two span:last-child {
+    color: #ff3600
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .bottom .logo {
+    position: relative;
+    width: 156px;
+    background-color: #ffffff;
+    border-bottom-right-radius: 5px;
+}
+.promotion .promotion-content .half-top .right .hot-game .hidden .bottom .logo img {
+    width: 70px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.promotion .promotion-content .half-top .right .hot-game:hover .hidden{
+    display: block;
+    box-shadow: 0 0 15px rgba(170, 170, 170, 1);
+}
+
+/*热门列表*/
+.list {
+    width: 100%;
+    background-color: #f9f9f8;
+}
+.list .content {
+    width: 1230px;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f8;
+}
+.list .content a {
+    width: 210px;
+    height: 62px;
+    font-size: 18px;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    color: #707070;
+    text-align: center;
+    line-height: 62px;
+}
+.list .content a:hover {
+    background-color: #eeeeee;
+    font-weight: bold;
+}
+
+/*finish*/
+.finish {
+    width: 100%;
+    height: 585px;
+    background-color: #333c47;
+}
+.finish .finish-content {
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+.finish .finish-content .about {
+    display: flex;
+    justify-content: space-between;
+}
+.finish .finish-content .about>ul {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    color: #9eafc3;
+}
+.finish .finish-content .about>ul>li:first-child {    
+    font-size: 20px;
+    font-weight: bold;
+    color: #9eafc3; 
+}
+.finish .finish-content .about>ul>li {    
+    font-size: 14px;
+    color: #9eafc3; 
+    text-align: left;
+    margin: 8px 0;
+    cursor: pointer;
+}
+.finish .finish-content .online {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.finish .finish-content .online>ul>li:first-child {    
+    font-size: 20px;
+    font-weight: bold;
+    color: #9eafc3; 
+}
+.finish .finish-content .online>ul>li {    
+    font-size: 14px;
+    color: #9eafc3; 
+    text-align: left;
+    margin: 8px 0;
+    /* cursor: pointer; */
+}
+.finish .finish-content .end {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+.finish .finish-content .end span {
+    font-size: 14px;
+    color: #9eafc3; 
+}
+.finish .finish-content ul li a:hover {
+    color: #ff3600;
+}
+.finish .finish-content ul li a{
+    color: #9eafc3; 
+    cursor: pointer;
+}

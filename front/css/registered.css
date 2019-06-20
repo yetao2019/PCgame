@@ -1,0 +1,36 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+.registered {
+    width: 70%;
+    margin: 0 auto;
+}
+.registered .box {
+    width: 900px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    border: 1px solid #cccccc;
+}
+.registered .box span:nth-child(1){
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    width: 800px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 50px;  
+}
+.registered .box div {
+    margin-top: 10px;
+}
+
+.registered .box button{
+    margin: 10px;
+}

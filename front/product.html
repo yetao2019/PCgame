@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="./css/product.css">
+    <script src="./js/jquery-1.12.2.js"></script>
+    <script src="./js/product.jQuery.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="header">
+        <div class="header-container">
+            <!-- nav.logo -->
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo_footer.png" alt=""></a>
+            </div>
+            <div class="center">
+                <div class="search">
+                    <span></span>
+                    <input type="text" placeholder="请输入关键字">
+                    <a href="" class="iconfont icon-xiazai17"></a>
+                </div>
+                <div class="my">
+                    <div>
+                        <span class="iconfont icon-gouwu"></span>
+                        <span><a href="">我的商城</a></span>
+                    </div>
+                    <div>
+                        <span class="iconfont icon-gouwuche"></span>
+                        <span><a href="">购物车</a></span>
+                    </div>
+                    <div>
+                        <span class="iconfont icon-kefu"></span>
+                        <span><a href="">客服中心</a></span>
+                    </div>
+                </div>
+            </div>
+            <!-- login -->
+            <div class="right">
+                <div class="login">
+                    <a href="../front/login.html" target="blank">登录</a>
+                </div>
+                <div class="login">
+                    <a href="../front/registered.html" target="blank">注册</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 导航 -->
+    <div class="nav">
+        <div class="content">
+            <ul class="outside">
+                <li>
+                    <a href="#">全部</a>
+                </li>
+                <li class="second">
+                    <a href="#">最新上市</a>
+                </li>
+                <li>
+                    <a href="">即将上市</a>
+                </li>
+                <li>
+                    <a href="">最受欢迎</a>
+                </li>
+                <li>
+                    <a href="">折扣促销</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- middle -->
+    <div class="middle">
+        <!-- 商品详情 -->
+        <div class="product" id="product">
+            <ul class="list" id="u1">
+                <li>
+                    <label></label>
+                    PC游戏平台
+                    <ul id="u2">
+                        <li>凤凰游戏</li>
+                        <li>STEAM</li>
+                        <li>EPIC</li>
+                        <li>ORIGIN</li>
+                        <li>UPLAY</li>
+                        <li>battlenet</li>
+                        <li>bathesda</li>
+                        <li>MOJANG</li>
+                    </ul>
+                </li>
+                <li>
+                    <label></label>
+                    主机
+                    <ul>
+                        <li>ROG G21</li>
+                        <li>联想启天M415</li>
+                        <li>Alienware Area-51</li>
+                        <li>惠普战66 Pro G1 MT</li>
+                        <li> 戴尔成铭 3980MT</li>
+                        <li>机械师F117-D56t3</li>
+                        <li>ROG GL12CX</li>
+                        <li> 联想拯救者 刃7000 3代</li>
+                    </ul>
+                </li>
+                <li>
+                    <label></label>
+                    游戏类型
+                    <ul>
+                        <li>第一人称射击</li>
+                        <li>第三人称射击</li>
+                        <li>动作游戏</li>
+                        <li>冒险解谜</li>
+                        <li>角色扮演</li>
+                        <li>体育竞技</li>
+                        <li>赛车竞速</li>
+                        <li>即时战略</li>
+                        <li>动作射击</li>
+                        <li>休闲益智</li>
+                        <li>策略战旗</li>
+                        <li>飞行射击</li>
+                    </ul>
+                </li>
+                <li>
+                    <label></label>
+                    潮流in搭
+                </li>
+                <li>
+                    <label></label>
+                    凤凰书城
+                </li>
+                <li>
+                    <label></label>
+                    3C数码
+                </li>
+            </ul>
+        </div>
+        <!-- 列表 -->
+        <div class="middle-list">
+            <!-- 八方旅人 -->
+            <div class="hot-game" id="hotGame">
+                <div class="hidden" id="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>八方旅人</span>
+                            <span>Octopath Traveler</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-15%</div>
+                            <div class="money-two">
+                                <span>￥402.00</span>
+                                <span>￥341.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/bafang.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-15%</div>
+                        <div class="money-two">
+                            <span>￥402.00</span>
+                            <span>￥341.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 勇者海王星 -->
+            <div class="hot-game">
+                <div class="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>勇者海王星</span>
+                            <span>Octopath Traveler</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-16%</div>
+                            <div class="money-two">
+                                <span>￥116.00</span>
+                                <span>￥98.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/b03.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-16%</div>
+                        <div class="money-two">
+                            <span>￥116.00</span>
+                            <span>￥98.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 辐射4 -->
+            <div class="hot-game">
+                <div class="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>辐射4</span>
+                            <span>Octopath Traveler</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-58%</div>
+                            <div class="money-two">
+                                <span>￥199.00</span>
+                                <span>￥84.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/jiangshi.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-58%</div>
+                        <div class="money-two">
+                            <span>￥199.00</span>
+                            <span>￥84.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 煮糊了2 -->
+            <div class="hot-game">
+                <div class="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>煮糊了2</span>
+                            <span>Octopath Traveler</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-38%</div>
+                            <div class="money-two">
+                                <span>￥90.00</span>
+                                <span>￥56.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/b05.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-38%</div>
+                        <div class="money-two">
+                            <span>￥90.00</span>
+                            <span>￥56.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 三国 -->
+            <div class="hot-game">
+                <div class="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>全面战争:三国 PC版 中文</span>
+                            <span>亚洲版key</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-16%</div>
+                            <div class="money-two">
+                                <span>￥268.00</span>
+                                <span>￥225.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/sanguo.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-16%</div>
+                        <div class="money-two">
+                            <span>￥268.00</span>
+                            <span>￥225.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 血污：夜之仪式-->
+            <div class="hot-game">
+                <div class="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>血污：夜之仪式 PC版 中文</span>
+                            <span>STEAM国区代购(标准版)</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-24%</div>
+                            <div class="money-two">
+                                <span>￥138.00</span>
+                                <span>￥105.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/xuewu.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-24%</div>
+                        <div class="money-two">
+                            <span>￥138.00</span>
+                            <span>￥105.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 赛博朋克2077 -->
+            <div class="hot-game">
+                <div class="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>赛博朋克2077 PC版 中文</span>
+                            <span>STEAM国区代购(标准版)</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-15%</div>
+                            <div class="money-two">
+                                <span>￥298.00</span>
+                                <span>￥253.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/pengke.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-15%</div>
+                        <div class="money-two">
+                            <span>￥298.00</span>
+                            <span>￥253.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 绝地求生大逃杀  -->
+            <div class="hot-game">
+                <div class="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>绝地求生大逃杀 PC版 中文</span>
+                            <span>大陆版key</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-6%</div>
+                            <div class="money-two">
+                                <span>￥98.00</span>
+                                <span>￥92.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/sanguo.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-6%</div>
+                        <div class="money-two">
+                            <span>￥98.00</span>
+                            <span>￥92.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 上古卷轴5:  -->
+            <div class="hot-game">
+                <div class="hidden">
+                    <div class="top">
+                        <div class="name">
+                            <span>上古卷轴5:天际 PC版</span>
+                            <span>全球版key</span>
+                        </div>
+                        <div class="look">
+                            <span>加入购物车</span>
+                            <a href="../front/details.html" target="blank"><span>查看详情</span></a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="money">
+                            <!-- discoun折扣 -->
+                            <div class="discount">-62%</div>
+                            <div class="money-two">
+                                <span>￥129.00</span>
+                                <span>￥49.00</span>
+                            </div>
+                        </div>
+                        <!-- steam-logo -->
+                        <div class="logo">
+                            <img src="../img/steam.logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="show-game">
+                    <img src="../img/juanzhou.jpg" alt="">
+                </div>
+                <div class="bottom">
+                    <div class="money">
+                        <!-- discoun折扣 -->
+                        <div class="discount">-62%</div>
+                        <div class="money-two">
+                            <span>￥129.00</span>
+                            <span>￥49.00</span>
+                        </div>
+                    </div>
+                    <!-- steam-logo -->
+                    <div class="logo-out">
+                        <img src="../img/steam.logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- finish -->
+    <div class="finish">
+            <div class="finish-content">
+                <div class="about">
+                    <ul>
+                        <li><a>关于</a></li>
+                        <li><a>关于凤凰</a></li>
+                        <li><a>服务条款</a></li>
+                        <li><a>会员</a></li>
+                        <li><a>积分</a></li>
+                        <li><a>优惠卷</a></li>
+                        <li><a>订单支付</a></li>
+                        <li><a>凤凰客户端</a></li>
+                        <li><a>凤凰App</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>支付方式</a></li>
+                        <li><a>支付宝</a></li>
+                        <li><a>微信</a></li>
+                        <li><a>网银</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>售后服务</a></li>
+                        <li><a>退款政策</a></li>
+                        <li><a>换货政策</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>实体配送</a></li>
+                        <li><a>顺丰</a></li>
+                        <li><a>EMS</a></li>
+                        <li><a>中通</a></li>
+                    </ul>
+                    <ul>
+                        <li><a>虚拟发货</a></li>
+                        <li><a>CDkey领取</a></li>
+                        <li><a>Steam代购</a></li>
+                        <li><a>匿名领取</a></li>
+                    </ul>
+                </div>
+                <div class="online">
+                    <ul>
+                        <li><a>客服中心</a></li>
+                        <li>客服在线时间:09:00-21:00</li>
+                        <li>客服QQ:<a href=""><img src="../img/qq.jpg"></a></li>
+                        <li>客服电话:400-072-2815</li>
+                    </ul>
+                    <ul>
+                        <li>分享</li>
+                        <li><a href=""><img src="../img/wb_logo.jpg"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a>加入我们</a></li>
+                        <li><a>商务合作</a></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="end">
+                    <span><a></a>凤凰传媒(SH601928)旗下网站 ：凤凰游戏</span>
+                    <span><a></a>CopyRight © 2011-2019 fhyx.com 杭州凤侠网络科技有限公司 All Right Reserved 浙ICP备12018679号-9</span>
+                </div>
+            </div>
+        </div>
+    
+
+</body>
+
+</html>
